@@ -1,0 +1,174 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+    border: solid red 1px;
+    /* margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;  */
+    /* background-color: #316bae; */
+    /* background-color: #333; */
+    /* background-color: #212a42; */
+    /* background-color: #00b9ef; */
+    /* background-color: #dcf836; */
+    /* background-color: #555; */
+    /* background-color: #777; */
+    /* background-color: #337ab7; */
+    /* background-color: #286090; */
+    /* background-color: #31708f; */
+    /* background-color: #245269; */
+    /* background-color: #3c4858; */
+}
+
+:root {
+    --primary-color: #e50914 !important;
+    --dark-color: #141414 !important;
+    --primary-text-color: #fffff0;
+    --secondary-text-color: #ffffffb3;
+}
+
+body {
+    font-family: Helvetica, sans-serif !important;
+    scroll-behavior: smooth;
+    background-color: transparent !important;
+    color: var(--primary-text-color) !important;
+    height: 100vh;
+    background: url(img/bcg.jpg) no-repeat center center/cover !important;
+    backdrop-filter: brightness(0.4);
+    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+    z-index: -1;
+}
+
+/* buttons */
+.btn-primary {
+    background: var(--primary-color) !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+.btn-primary:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+/* tabs */
+.tabs,
+.tab-content {
+    background-color: var(--dark-color);
+}
+
+.tabs {
+    color: var(--secondary-text-color);
+}
+.tabs_col:hover {
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+/* cards */
+.card .img-fit {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.card {
+    height: 100% !important;
+}
+
+/* content 2 tab cards */
+.card-title {
+    color: var(--primary-text-color) !important;
+}
+.card-text-secondary {
+    color: var(--secondary-text-color);
+}
+
+/* content 3 table */
+.table-dark {
+    --bs-table-bg: #2c3034 !important;
+    --bs-table-striped-bg: #000 !important;
+    --bs-table-color: #ffffffb3 !important;
+    --bs-table-striped-color: #ffffffb3 !important;
+}
+
+.table thead tr th {
+    background-color: #000 !important;
+    color: var(--primary-text-color);
+}
+
+/* footer */
+.footer li,
+.footer p {
+    color: var(--secondary-text-color) !important;
+    border: none !important;
+}
+
+/* // `xs` returns only a ruleset and no media query */
+/* // ... { ... } */
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .showcase-bottom h1 {
+        border: solid greenyellow 1px;
+
+        font-size: 2.6rem !important;
+
+        margin-bottom: 30px !important;
+    }
+
+    .showcase-bottom p {
+        font-size: 1rem !important;
+    }
+    .showcase-bottom a {
+        font-size: 0.5rem !important;
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    * {
+        border: red 1px solid;
+    }
+    .tab-1-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tab-2-content-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    * {
+        border: red 1px solid;
+    }
+    header {
+        height: 70vh !important;
+    }
+    .showcase-top img {
+        display: flex;
+        margin-left: 5px;
+    }
+    .showcase-bottom h1 {
+        font-size: 3.8rem;
+        line-height: 1;
+    }
+    .showcase-bottom p {
+        font-size: 1.4rem;
+    }
+    .showcase-bottom a {
+        font-size: 1.1rem;
+    }
+
+    .tabs p {
+        display: none;
+    }
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
